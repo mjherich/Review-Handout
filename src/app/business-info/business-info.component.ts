@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
+import {FormControl, Validators} from '@angular/forms';
 
 import { Business } from '../business';
 
@@ -7,6 +8,7 @@ import { Business } from '../business';
   templateUrl: './business-info.component.html',
   styleUrls: ['./business-info.component.scss']
 })
+
 export class BusinessInfoComponent implements OnInit {
 
   constructor() { }

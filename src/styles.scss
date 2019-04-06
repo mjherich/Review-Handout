@@ -1,4 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
-html, body {
-    background: gray;
-}
+@import "bulma/css/bulma.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  h1, h2 {
+      text-align: center;
+  }
+
+  #home-hero {
+    padding: 50px 0;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    h1, p {
+        color: #fff;
+    }
+  }

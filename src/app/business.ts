@@ -1,8 +1,9 @@
 export class Business {
 
+    name: string;
+    location: string;
+    
     constructor(
-        public name: string,
-        public location: string
     ) { }
 
 }
