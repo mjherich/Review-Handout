@@ -1,5 +1,4 @@
 import { Component, OnInit, NgModule } from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
 
 import { Business } from '../business';
 
@@ -10,7 +9,9 @@ import { Business } from '../business';
 })
 
 export class BusinessInfoComponent implements OnInit {
-
+  
+  business = new Business();
+  
   constructor() { }
 
   ngOnInit() {

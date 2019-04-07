@@ -1,12 +1,12 @@
 <div class="container">
-  <h2 class="is-size-1">Get Started!</h2>
-  <form class="example-form">
+  <form #businessForm="ngForm" class="example-form">
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="Business Name">
+      <input matInput [(ngModel)]="business.name" name="name" placeholder="Business Name">
     </mat-form-field>
   
     <mat-form-field class="example-full-width">
-      <input matInput placeholder="City, State">
+      <input matInput [value]="business.location" [(ngModel)]="business.location" name="location" placeholder="City, State">
     </mat-form-field>
+    {{business.location}}
   </form>
 </div>
